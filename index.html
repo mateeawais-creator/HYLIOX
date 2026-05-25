@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HYLIOX ESTATES curates elite modernist residential masterpieces worldwide. Immersive, high-end architectural real estate.">
+  <title>HYLIOX ESTATES | Modernist Residential Masterpieces</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="theme-jungle">
+
+  <!-- Magnetic Custom Cursor Layers -->
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+
+  <!-- Futuristic Preloader Screen -->
+  <div class="preloader" id="preloader">
+    <svg class="preloader-logo" viewBox="0 0 100 100" aria-label="HYLIOX Logo">
+      <!-- High-tech structural logo symbol -->
+      <path class="logo-svg-path" d="M 50 12 L 88 42 L 88 88 L 50 70 L 12 88 L 12 42 Z M 50 28 L 74 48 L 74 74 L 50 62 L 26 74 L 26 48 Z"/>
+    </svg>
+    <div class="preloader-title">HYLIOX</div>
+    <div class="preloader-loader">
+      <div class="preloader-progress" id="preload-progress"></div>
+    </div>
+    <div class="preloader-percentage" id="preload-perc">0%</div>
+  </div>
+
+  <!-- Floating Navigation Bar -->
+  <nav class="header-nav">
+    <a href="#" class="nav-logo" id="brand-logo">HYLIOX</a>
+    <ul class="nav-links">
+      <li><a href="#collection" class="hoverable">Collection</a></li>
+      <li><a href="#dashboard" class="hoverable">Command</a></li>
+      <li><a href="#blueprint" class="hoverable">Anatomy</a></li>
+      <li><a href="#inquiry" class="hoverable">Scheduler</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Header Video Scrubbing Section -->
+  <div class="hero-scrub-section" id="hero-scrub">
+    <div class="video-sticky-wrapper" id="video-wrapper">
+      <!-- High-Performance video element for smooth LERP playback scrubbing -->
+      <video class="hero-video" id="hero-video" src="Header Video.mp4" playsinline muted preload="auto"></video>
+      <div class="video-overlay-gradient"></div>
+      
+      <!-- Tech-Cockpit Narrative Overlay Box -->
+      <div class="narrative-container">
+        <!-- Phase 1: 0% - 20% scroll -->
+        <div class="narrative-phase narrative-phase-1 active" id="phase-1">
+          <span class="phase-index">01 / CLOUD BRIEF</span>
+          <h2>VILLA VERTEX</h2>
+          <p>Location: Hunan, China. A modernist concrete and steel spire anchored onto a sheer limestone ridge, suspended above the misty mountain peaks.</p>
+        </div>
+        <!-- Phase 2: 25% - 50% scroll (over pool) -->
+        <div class="narrative-phase narrative-phase-2" id="phase-2">
+          <span class="phase-index">02 / FLOATING GEOMETRY</span>
+          <h2>THE SKY CANTILEVER</h2>
+          <p>A spectacular 30-meter structural cantilever projects boldly over 600-meter sheer canyons. Designed to dissolve gravity, floating above morning fog.</p>
+        </div>
+        <!-- Phase 3: 55% - 80% scroll (approaching glass doors) -->
+        <div class="narrative-phase narrative-phase-3" id="phase-3">
+          <span class="phase-index">03 / ATMOSPHERIC ENVELOPE</span>
+          <h2>GLAZED VERTICALITY</h2>
+          <p>Double-height structural glass wall panels envelope the panoramic living lounge, framing dramatic spires, pine forests, and moving clouds.</p>
+        </div>
+        <!-- Phase 4: 85% - 100% scroll (inside bedroom lounge) -->
+        <div class="narrative-phase narrative-phase-4" id="phase-4">
+          <span class="phase-index">04 / THE SANCTUARY</span>
+          <h2>COZY MONOLITHISM</h2>
+          <p>Step inside the floating volume. High-end walnut timber ceilings, warm floor spotlights, and bespoke minimalist hearths construct a warm, organic refuge.</p>
+        </div>
+      </div>
+      
+      <!-- Pulsing Scroll indicator -->
+      <div class="scroll-indicator" id="scroll-indicator">
+        <span>Scroll to Explore</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scrollable Content Parallax Wrapper -->
+  <main class="content-wrapper" id="content">
+
+    <!-- Section 1: The Monolith Portfolio -->
+    <section class="section-container" id="collection">
+      <div class="collection-header">
+        <div class="header-left">
+          <span class="section-tag">01 / Masterpiece Curation</span>
+          <h2 class="section-title">The Portfolio</h2>
+          <p class="section-desc">Properties engineered strictly as works of high art. We reject simple listings, presenting homes as spatial sculptures designed in harmony with their landscapes.</p>
+        </div>
+        <div class="header-right-index">HYLIOX</div>
+      </div>
+
+      <!-- Vertical Monolith List (Alternate Grid Layouts) -->
+      <div class="monoliths-list">
+        
+        <!-- Monolith 1: Villa Vertex -->
+        <div class="monolith-row" data-biotope="jungle">
+          <div class="monolith-visual hoverable">
+            <img class="monolith-img" src="listing_jungle.png" alt="Villa Vertex Hunan Peaks">
+            
+            <!-- Liquid Hover Details Panel -->
+            <div class="monolith-reveal-panel">
+              <h4 class="reveal-title">Hunan, China</h4>
+              <p class="reveal-p">Villa Vertex combines structural high-tensile steel frame with local walnut timber, achieving supreme structural integrity against high-altitude winds.</p>
+              <div class="reveal-stats-grid">
+                <div class="reveal-stat-row">
+                  <span>Wind Resistance</span>
+                  <span>Class-I Rating</span>
+                </div>
+                <div class="reveal-stat-row">
+                  <span>Glazing</span>
+                  <span>Triple-Glazed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="monolith-meta">
+            <span class="monolith-index">Monolith 01 / Sky Peaks</span>
+            <h3 class="monolith-name">Villa Vertex</h3>
+            <span class="monolith-coords">29.3496° N / 110.4735° E / 1200M ALT</span>
+            <p class="monolith-brief">Suspended over the vertical sandstone karst peaks of Zhangjiajie. Engineered with massive steel frame cantilevers and curved aerodynamic shell roofing to withstand the alpine environment while delivering sweeping peak views.</p>
+            <div class="monolith-specs-sheet">
+              <div class="spec-sheet-col">
+                <span>Footprint</span>
+                <span>7,800 SQFT</span>
+              </div>
+              <div class="spec-sheet-col">
+                <span>Materials</span>
+                <span>Steel & Walnut</span>
+              </div>
+              <div class="spec-sheet-col">
+                <span>Value</span>
+                <span>$12,400,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Monolith 2: The Horizon House -->
+        <div class="monolith-row" data-biotope="coastal">
+          <div class="monolith-visual hoverable">
+            <img class="monolith-img" src="listing_coastal.png" alt="The Horizon House Positano">
+            
+            <!-- Liquid Hover Details Panel -->
+            <div class="monolith-reveal-panel">
+              <h4 class="reveal-title">Amalfi Coast, Italy</h4>
+              <p class="reveal-p">Built on sheer cliff faces, this concrete slab cantilever overhangs the sea, integrating advanced maritime concrete engineering.</p>
+              <div class="reveal-stats-grid">
+                <div class="reveal-stat-row">
+                  <span>Cantilever</span>
+                  <span>7.5M Projection</span>
+                </div>
+                <div class="reveal-stat-row">
+                  <span>Water Source</span>
+                  <span>Desalination</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="monolith-meta">
+            <span class="monolith-index">Monolith 02 / Coastline</span>
+            <h3 class="monolith-name">The Horizon House</h3>
+            <span class="monolith-coords">40.6281° N / 14.4850° E / 85M ALT</span>
+            <p class="monolith-brief">A brutalist structural concrete wonder cantilevered directly over the Positano cliffs. Features floor-to-ceiling glass faces framing the glittering Mediterranean Sea.</p>
+            <div class="monolith-specs-sheet">
+              <div class="spec-sheet-col">
+                <span>Footprint</span>
+                <span>9,500 SQFT</span>
+              </div>
+              <div class="spec-sheet-col">
+                <span>Materials</span>
+                <span>Maritime Concrete</span>
+              </div>
+              <div class="spec-sheet-col">
+                <span>Value</span>
+                <span>$14,200,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Monolith 3: The Mirage Pavilion -->
+        <div class="monolith-row" data-biotope="desert">
+          <div class="monolith-visual hoverable">
+            <img class="monolith-img" src="listing_desert.png" alt="The Mirage Pavilion California">
+            
+            <!-- Liquid Hover Details Panel -->
+            <div class="monolith-reveal-panel">
+              <h4 class="reveal-title">Joshua Tree, USA</h4>
+              <p class="reveal-p">Encased in weathered Corten steel panels, the structure mirrors the reddish desert soils, utilizing passive geothermal cooling loops.</p>
+              <div class="reveal-stats-grid">
+                <div class="reveal-stat-row">
+                  <span>Steel Shell</span>
+                  <span>Corten Weathered</span>
+                </div>
+                <div class="reveal-stat-row">
+                  <span>Solar Capacity</span>
+                  <span>18kW Passive</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="monolith-meta">
+            <span class="monolith-index">Monolith 03 / Arid Desert</span>
+            <h3 class="monolith-name">The Mirage Pavilion</h3>
+            <span class="monolith-coords">34.1333° N / 116.3167° W / 980M ALT</span>
+            <p class="monolith-brief">Rusted steel, concrete, and sheer panels of mirrored glass nestle silently among Joshua trees. Designed to dissolve into desert sandscapes under the starry sky.</p>
+            <div class="monolith-specs-sheet">
+              <div class="spec-sheet-col">
+                <span>Footprint</span>
+                <span>4,800 SQFT</span>
+              </div>
+              <div class="spec-sheet-col">
+                <span>Materials</span>
+                <span>Corten & Glass</span>
+              </div>
+              <div class="spec-sheet-col">
+                <span>Value</span>
+                <span>$6,400,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Monolith 4: The Slate Penthouse -->
+        <div class="monolith-row" data-biotope="urban">
+          <div class="monolith-visual hoverable">
+            <img class="monolith-img" src="listing_urban.png" alt="The Slate Penthouse NYC">
+            
+            <!-- Liquid Hover Details Panel -->
+            <div class="monolith-reveal-panel">
+              <h4 class="reveal-title">New York City, USA</h4>
+              <p class="reveal-p">Double-height concrete columns meet rich charcoal-dyed timber inside this sky-duplex, framing pristine Central Park panoramas.</p>
+              <div class="reveal-stats-grid">
+                <div class="reveal-stat-row">
+                  <span>Height Zone</span>
+                  <span>Floor 82 Duplex</span>
+                </div>
+                <div class="reveal-stat-row">
+                  <span>Acoustics</span>
+                  <span>Triple Sound Barrier</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="monolith-meta">
+            <span class="monolith-index">Monolith 04 / Metropolitan</span>
+            <h3 class="monolith-name">The Slate Penthouse</h3>
+            <span class="monolith-coords">40.7829° N / 73.9654° W / 320M ALT</span>
+            <p class="monolith-brief">An urban concrete-and-timber sanctuary floating above Manhattan. Generates a dramatic architectural refuge framed by a double-height glass library room.</p>
+            <div class="monolith-specs-sheet">
+              <div class="spec-sheet-col">
+                <span>Footprint</span>
+                <span>6,500 SQFT</span>
+              </div>
+              <div class="spec-sheet-col">
+                <span>Materials</span>
+                <span>Brushed Slate & Concrete</span>
+              </div>
+              <div class="spec-sheet-col">
+                <span>Value</span>
+                <span>$18,900,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 2: Playable Smart Cockpit Dashboard -->
+    <section class="section-container" id="dashboard">
+      <div class="collection-header">
+        <div class="header-left">
+          <span class="section-tag">02 / Space Command</span>
+          <h2 class="section-title">Atmospheric Dashboard</h2>
+          <p class="section-desc">Experience architectural art as a living environment. Swap biotope profiles to dynamically re-theme the platform and toggle smart controls over our flagship blueprint.</p>
+        </div>
+        <div class="header-right-index">02</div>
+      </div>
+
+      <div class="dashboard-grid">
+        <!-- Dashboard Control Desk (Left) -->
+        <div class="dashboard-controls">
+          <h3 class="control-title">Curation Profile</h3>
+          <div class="biotope-buttons">
+            <button class="biotope-btn active hoverable" data-biotope="jungle">Mountain Peak</button>
+            <button class="biotope-btn hoverable" data-biotope="coastal">Coastline</button>
+            <button class="biotope-btn hoverable" data-biotope="desert">Arid Desert</button>
+            <button class="biotope-btn hoverable" data-biotope="urban">Metropolitan</button>
+          </div>
+
+          <h3 class="control-title">Cockpit Controls</h3>
+          <div class="smart-toggles-container">
+            <!-- Toggle 1 -->
+            <div class="toggle-group">
+              <div class="toggle-label">
+                <span>Interior Smart Glow</span>
+                <span>Activate architectural interior lighting</span>
+              </div>
+              <label class="switch hoverable">
+                <input type="checkbox" id="toggle-lights" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+            <!-- Toggle 2 -->
+            <div class="toggle-group">
+              <div class="toggle-label">
+                <span>Mountain Valley Mist</span>
+                <span>Inject surrounding landscape fog layer</span>
+              </div>
+              <label class="switch hoverable">
+                <input type="checkbox" id="toggle-mist" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+            <!-- Toggle 3 -->
+            <div class="toggle-group">
+              <div class="toggle-label">
+                <span>Landscape Fire Element</span>
+                <span>Ignite concrete twilight fire-pit rings</span>
+              </div>
+              <label class="switch hoverable">
+                <input type="checkbox" id="toggle-fire">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard Scene Visual Display (Right) -->
+        <div class="dashboard-display" id="dashboard-display">
+          <div class="dashboard-scene-container" id="scene-container">
+            <img class="dashboard-scene-img active" id="scene-jungle" src="listing_jungle.png" alt="Rainforest Ambiance">
+            <img class="dashboard-scene-img" id="scene-coastal" src="listing_coastal.png" alt="Coastal Ambiance">
+            <img class="dashboard-scene-img" id="scene-desert" src="listing_desert.png" alt="Desert Ambiance">
+            <img class="dashboard-scene-img" id="scene-urban" src="listing_urban.png" alt="Metropolitan Ambiance">
+          </div>
+
+          <!-- Dynamic Smarthome Layers -->
+          <div class="dashboard-atmosphere jungle-fog-overlay active" id="overlay-mist"></div>
+          <div class="dashboard-atmosphere coastal-waves-overlay" id="overlay-waves"></div>
+          <div class="dashboard-atmosphere desert-dust-overlay" id="overlay-dust"></div>
+          <div class="dashboard-atmosphere urban-lights-overlay" id="overlay-urban"></div>
+          <div class="scene-glow-layer active" id="overlay-interior-glow"></div>
+          <div class="scene-glow-layer" id="overlay-fire-glow"></div>
+
+          <!-- Overlay Stats Card -->
+          <div class="dashboard-metadata-card">
+            <div class="meta-info">
+              <h4 id="dash-prop-name">Villa Vertex</h4>
+              <p id="dash-prop-loc">Hunan, China</p>
+            </div>
+            <div class="meta-stats">
+              <span>Beds: <strong id="dash-prop-beds">4</strong></span>
+              <span>Baths: <strong id="dash-prop-baths">5.5</strong></span>
+              <span>Footprint: <strong id="dash-prop-sqft">8,200 SQFT</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Masterpiece Anatomy Blueprint -->
+    <section class="section-container" id="blueprint">
+      <div class="collection-header">
+        <div class="header-left">
+          <span class="section-tag">03 / Architectural Rigor</span>
+          <h2 class="section-title">Masterpiece Anatomy</h2>
+          <p class="section-desc">Audit the structural core. Hover over vector coordinate hotspots on our signature blueprint to review structural, glazing, material, and ecological filtration metrics.</p>
+        </div>
+        <div class="header-right-index">03</div>
+      </div>
+
+      <div class="blueprint-layout">
+        <!-- Blueprint Vector SVG (Left) -->
+        <div class="blueprint-vector-container" id="blueprint-container">
+          <svg class="blueprint-svg" viewBox="0 0 800 500">
+            <!-- Grid Matrix -->
+            <g class="blueprint-grid-lines">
+              <line x1="50" y1="0" x2="50" y2="500" />
+              <line x1="150" y1="0" x2="150" y2="500" />
+              <line x1="250" y1="0" x2="250" y2="500" />
+              <line x1="350" y1="0" x2="350" y2="500" />
+              <line x1="450" y1="0" x2="450" y2="500" />
+              <line x1="550" y1="0" x2="550" y2="500" />
+              <line x1="650" y1="0" x2="650" y2="500" />
+              <line x1="750" y1="0" x2="750" y2="500" />
+              <line x1="0" y1="50" x2="800" y2="50" />
+              <line x1="0" y1="150" x2="800" y2="150" />
+              <line x1="0" y1="250" x2="800" y2="250" />
+              <line x1="0" y1="350" x2="800" y2="350" />
+              <line x1="0" y1="450" x2="800" y2="450" />
+            </g>
+
+            <!-- Sophisticated Blueprint Path outlines -->
+            <path class="blueprint-path" d="M 120 400 L 680 400 M 120 400 L 120 280 L 320 280 L 320 160 L 620 160 L 620 400 M 320 280 L 620 280" />
+            <path class="blueprint-path" d="M 280 160 L 280 140 L 680 140 L 680 160 M 180 280 L 180 260 L 320 260 M 80 400 L 80 380 L 120 380" />
+            <path class="blueprint-path" d="M 180 400 L 180 280 M 440 280 L 440 160 M 560 280 L 560 160" />
+            <line class="blueprint-path" x1="220" y1="400" x2="220" y2="280" stroke-dasharray="4 4" />
+            <line class="blueprint-path" x1="260" y1="400" x2="260" y2="280" stroke-dasharray="4 4" />
+            <line class="blueprint-path" x1="380" y1="280" x2="380" y2="160" stroke-dasharray="4 4" />
+            <line class="blueprint-path" x1="500" y1="280" x2="500" y2="160" stroke-dasharray="4 4" />
+            <path class="blueprint-path" d="M 620 400 L 740 400 L 740 330 L 710 330 L 710 370 L 620 370" />
+            <line class="blueprint-path" x1="620" y1="345" x2="710" y2="345" stroke-dasharray="1 5" />
+
+            <!-- Hotspot 1: Cantilever -->
+            <g class="blueprint-hotspot hoverable active" data-node="cantilever" transform="translate(650, 140)">
+              <circle class="blueprint-hotspot-circle" cx="0" cy="0" r="16" />
+              <circle class="blueprint-hotspot-ring" cx="0" cy="0" r="10" />
+              <circle class="blueprint-hotspot-dot" cx="0" cy="0" r="4" />
+            </g>
+            <!-- Hotspot 2: Glazing -->
+            <g class="blueprint-hotspot hoverable" data-node="glazing" transform="translate(380, 220)">
+              <circle class="blueprint-hotspot-circle" cx="0" cy="0" r="16" />
+              <circle class="blueprint-hotspot-ring" cx="0" cy="0" r="10" />
+              <circle class="blueprint-hotspot-dot" cx="0" cy="0" r="4" />
+            </g>
+            <!-- Hotspot 3: Decking -->
+            <g class="blueprint-hotspot hoverable" data-node="materials" transform="translate(200, 395)">
+              <circle class="blueprint-hotspot-circle" cx="0" cy="0" r="16" />
+              <circle class="blueprint-hotspot-ring" cx="0" cy="0" r="10" />
+              <circle class="blueprint-hotspot-dot" cx="0" cy="0" r="4" />
+            </g>
+            <!-- Hotspot 4: Filtration -->
+            <g class="blueprint-hotspot hoverable" data-node="filtration" transform="translate(680, 360)">
+              <circle class="blueprint-hotspot-circle" cx="0" cy="0" r="16" />
+              <circle class="blueprint-hotspot-ring" cx="0" cy="0" r="10" />
+              <circle class="blueprint-hotspot-dot" cx="0" cy="0" r="4" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Hotspot Detail Card (Right) -->
+        <div class="blueprint-card" id="blueprint-card">
+          <span class="bp-node-tag" id="bp-tag">Engineering 01 / Structural</span>
+          <h3 class="bp-node-title" id="bp-title">Brutalist Cantilever</h3>
+          <p class="bp-node-desc" id="bp-desc">A double-reinforced carbon-fiber concrete roof cantilever extending 6.2 meters over the glass lounge without pillars. Engineered to maximize panoramic field-of-view while balancing high thermal mass.</p>
+          <div class="bp-node-specs" id="bp-specs">
+            <div class="bp-spec-row">
+              <span class="bp-spec-label">Overhang Range</span>
+              <span class="bp-spec-val" id="bp-val-1">6.2 Meters</span>
+            </div>
+            <div class="bp-spec-row">
+              <span class="bp-spec-label">Load Capacity</span>
+              <span class="bp-spec-val" id="bp-val-2">450 kN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    <!-- Section 4: Advisory & scheduler Form -->
+    <section class="section-container" id="inquiry">
+      <div class="inquiry-layout">
+        <!-- Info Column -->
+        <div class="inquiry-info">
+          <span class="section-tag">04 / Advisory Sourcing</span>
+          <h2 class="section-title">Schedule private briefing</h2>
+          <p class="section-desc">We operate completely off-market to manage and broker the world's most exclusive architecture portfolio. Coordinate VIP walkthroughs, helicopter travel, and digital VR briefings.</p>
+
+          <ul class="info-bullet-list">
+            <li class="info-bullet">
+              <span class="bullet-number">01</span>
+              <div class="bullet-text">
+                <h4>Closed Ledger System</h4>
+                <p>Over 80% of our architectural assets are completely hidden on secure local systems to protect absolute seller confidentiality and VIP security.</p>
+              </div>
+            </li>
+            <li class="info-bullet">
+              <span class="bullet-number">02</span>
+              <div class="bullet-text">
+                <h4>VIP Travel Logistics</h4>
+                <p>We handle secure helicopter transport, executive flight plans, and culinary accommodations directly to the property ridges for private viewings.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Form Column -->
+        <div class="inquiry-form-card">
+          <h3 class="form-title">Viewing Brief</h3>
+          <form id="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Brief securely logged. An AURA Executive will initiate VIP vetting shortly.');">
+            <div class="form-grid">
+              <div class="form-group">
+                <input class="form-input" type="text" id="form-name" placeholder=" " required>
+                <label class="form-label" for="form-name">Full Name</label>
+              </div>
+              <div class="form-group">
+                <input class="form-input" type="email" id="form-email" placeholder=" " required>
+                <label class="form-label" for="form-email">Email Address</label>
+              </div>
+              <div class="form-group">
+                <input class="form-input" type="tel" id="form-phone" placeholder=" " required>
+                <label class="form-label" for="form-phone">Contact Number</label>
+              </div>
+              <div class="form-group">
+                <select class="form-input form-select" id="form-property" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="vertex">Villa Vertex (Hunan Peaks)</option>
+                  <option value="horizon">The Horizon House (Amalfi Coast)</option>
+                  <option value="mirage">The Mirage Pavilion (Joshua Tree)</option>
+                  <option value="slate">The Slate Penthouse (Manhattan)</option>
+                </select>
+                <label class="form-label" for="form-property">Selected Monolith</label>
+              </div>
+              <div class="form-group form-group-full">
+                <textarea class="form-input" id="form-message" placeholder=" " required></textarea>
+                <label class="form-label" for="form-message">Outline your scheduling needs or residential requirements...</label>
+              </div>
+            </div>
+            <button type="submit" class="form-submit-btn hoverable">Request Briefing</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>HYLIOX</h3>
+          <p>Elite global architectural real estate. Engineering modernist residential masterpieces in harmony with dramatic landscapes.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Collection</h4>
+          <ul>
+            <li><a href="#collection" class="hoverable">Rainforest Monoliths</a></li>
+            <li><a href="#collection" class="hoverable">Coastal Cantilevers</a></li>
+            <li><a href="#collection" class="hoverable">Arid Pavilions</a></li>
+            <li><a href="#collection" class="hoverable">Metropolitan Slate</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Vetting</h4>
+          <ul>
+            <li><a href="#blueprint" class="hoverable">Anatomy Audits</a></li>
+            <li><a href="#inquiry" class="hoverable">Off-Market ledger</a></li>
+            <li><a href="#" class="hoverable">Client Portal</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Headquarters</h4>
+          <p style="font-family:var(--font-sans); font-size:0.8rem; line-height:1.7; color:var(--text-muted); font-weight:300;">
+            HYLIOX Estates Global S.A.<br>
+            Avenida de la Luz, Floor 42<br>
+            San José, Costa Rica
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 HYLIOX ESTATES. All rights reserved. Created as architectural art.</span>
+        <div class="footer-bottom-links">
+          <a href="#" class="hoverable">Privacy Brief</a>
+          <a href="#" class="hoverable">System Protocols</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
